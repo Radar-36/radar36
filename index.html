@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar 36 — Security Orchestration Platform</title>
+<meta name="description" content="Radar 36 is the security orchestration platform where your tools, custom scripts and AI agents run together in isolated sandboxes. Run, validate and deliver security tests at scale.">
+<meta property="og:title" content="Radar 36 — Security Orchestration Platform">
+<meta property="og:description" content="One workspace to run security tools, scripts and AI agents together, safely. Faster testing, higher quality outcomes.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+    <symbol id="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></symbol>
+    <symbol id="tick" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-6.5"/></symbol>
+    <symbol id="i-frag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="4" width="7" height="6" rx="1.5"/><rect x="3" y="14" width="7" height="6" rx="1.5"/><path d="M14 17h7M17.500 13.500v7" stroke-dasharray="2 2.500"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.500 6.500a4 4 0 0 0-5.200 5.200L4 17l3 3 5.300-5.300a4 4 0 0 0 5.200-5.200L15 12l-3-3z"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.500-3.300 7.800-8 9-4.700-1.200-8-4.500-8-9V6z"/><path d="M12 8.500v4.500M12 16v.100"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.200"/><path d="M3 19.500c.600-3.200 3-5 6-5s5.400 1.800 6 5M16 5.200a3.200 3.200 0 0 1 0 5.800M18 14.800c1.700.700 2.700 2.300 3 4.700"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.500v9L12 21l-8-4.500v-9z"/><path d="M4 7.500l8 4.500 8-4.500M12 12v9"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.500" y="4" width="17" height="6.500" rx="2"/><rect x="3.500" y="13.500" width="17" height="6.500" rx="2"/><path d="M7.500 7.250h.100M7.500 16.750h.100"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.500" y="10.500" width="15" height="10" rx="2.500"/><path d="M8 10.500V8a4 4 0 0 1 8 0v2.500"/></symbol>
+    <symbol id="i-log" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.500" width="16" height="17" rx="2.500"/><path d="M8 8.500h8M8 12h8M8 15.500h5"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Radar 36 home"><img src="assets/img/logo.png" alt="" width="30" height="30">Radar 36</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#platform">Platform</a>
+      <a href="security-firms.html">For security firms</a>
+      <a href="enterprise.html">For enterprises</a>
+      <a href="index.html#deployment">Deployment</a>
+      <a class="m-cta" href="https://cal.id/saurabhsingh/product-walkthrough" target="_blank" rel="noopener">Book a demo</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://cal.id/saurabhsingh/product-walkthrough" target="_blank" rel="noopener">Book a demo</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"><canvas data-radar aria-hidden="true"></canvas></div>
+  <div class="container">
+    <div class="hero-copy">
+      <span class="pill rv"><b>Platform</b> Security orchestration, self-hosted</span>
+      <h1 class="rv" style="--i:1">Security testing, <span class="grad-text">orchestrated.</span></h1>
+      <p class="lead rv" style="--i:2">Radar 36 is one workspace where your security tools, custom scripts and AI agents run together in isolated sandboxes. Test faster, validate sooner and deliver with confidence.</p>
+      <div class="hero-actions rv" style="--i:3">
+        <a class="btn btn-primary" href="https://cal.id/saurabhsingh/product-walkthrough" target="_blank" rel="noopener">Book a demo <svg><use href="#arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#platform">See the platform</a>
+      </div>
+      <div class="hero-note rv" style="--i:4">
+        <span><svg><use href="#tick"/></svg>Keep the tools you own</span>
+        <span><svg><use href="#tick"/></svg>Runs in your environment</span>
+        <span><svg><use href="#tick"/></svg>Every run on the record</span>
+      </div>
+    </div>
+
+    <div class="stage rv-scale" data-sim>
+      <div class="window">
+        <div class="window-bar">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <div class="window-title">Full VAPT Workflow <span>· Run #4287 · pentest-vm-01</span></div>
+          <div class="status"><i></i><span>Running</span></div>
+        </div>
+        <div class="sim">
+          <div class="sim-canvas">
+            <svg viewBox="0 0 932 300" role="img" aria-label="Animated workflow: a trigger starts Nessus and Nuclei scans, two AI agents run in parallel, findings are analysed, a report is drafted and the team is notified.">
+              <path class="e" d="M104 150H132"/><path class="ef" id="e-1" d="M104 150H132"/>
+              <path class="e" d="M268 150H296"/><path class="ef" id="e-2" d="M268 150H296"/>
+              <path class="e" d="M432 150C446 150 446 99 460 99"/><path class="ef" id="e-3a" d="M432 150C446 150 446 99 460 99"/>
+              <path class="e" d="M432 150C446 150 446 201 460 201"/><path class="ef" id="e-3b" d="M432 150C446 150 446 201 460 201"/>
+              <path class="e" d="M596 99C610 99 610 150 624 150"/><path class="ef" id="e-4a" d="M596 99C610 99 610 150 624 150"/>
+              <path class="e" d="M596 201C610 201 610 150 624 150"/><path class="ef" id="e-4b" d="M596 201C610 201 610 150 624 150"/>
+              <path class="e" d="M760 150C774 150 774 99 788 99"/><path class="ef" id="e-5" d="M760 150C774 150 774 99 788 99"/>
+              <path class="e" d="M856 128V172"/><path class="ef" id="e-6" d="M856 128V172"/>
+
+              <g class="n k-trig" id="n-trigger" transform="translate(8 121)">
+                <rect class="box" width="96" height="58" rx="12"/>
+                <rect class="ico" x="11" y="14" width="30" height="30" rx="8"/><path d="M22.500 23.500l8 5.500-8 5.500z" fill="#fff"/>
+                <text class="t" x="49" y="25">Trigger</text><text class="name" x="49" y="41">Start</text>
+              </g>
+              <g class="n k-scan" id="n-nessus" transform="translate(132 121)">
+                <rect class="box" width="136" height="58" rx="12"/>
+                <rect class="ico" x="11" y="14" width="30" height="30" rx="8"/><path d="M26 21.500l6.500 3.750v7.500L26 36.500l-6.500-3.750v-7.500z" fill="none" stroke="#fff" stroke-width="1.800"/>
+                <text class="t" x="49" y="25">Scanner</text><text class="name" x="49" y="41">Nessus Scan</text>
+                <circle class="st" cx="122" cy="14" r="4"/><path class="chk" d="M119.800 14l1.600 1.600 2.900-3.200" fill="none" stroke="#fff" stroke-width="1.300" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="n k-scan" id="n-nuclei" transform="translate(296 121)">
+                <rect class="box" width="136" height="58" rx="12"/>
+                <rect class="ico" x="11" y="14" width="30" height="30" rx="8"/><g fill="none" stroke="#fff" stroke-width="1.500"><ellipse cx="26" cy="29" rx="8" ry="3.200"/><ellipse cx="26" cy="29" rx="8" ry="3.200" transform="rotate(60 26 29)"/><ellipse cx="26" cy="29" rx="8" ry="3.200" transform="rotate(120 26 29)"/></g>
+                <text class="t" x="49" y="25">Scanner</text><text class="name" x="49" y="41">Nuclei Scan</text>
+                <circle class="st" cx="122" cy="14" r="4"/><path class="chk" d="M119.800 14l1.600 1.600 2.900-3.200" fill="none" stroke="#fff" stroke-width="1.300" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="n k-agent" id="n-darkmoon" transform="translate(460 70)">
+                <rect class="box" width="136" height="58" rx="12"/>
+                <rect class="ico" x="11" y="14" width="30" height="30" rx="8"/><path d="M26 21l2 5.800 5.800 2.200-5.800 2.200-2 5.800-2-5.800-5.800-2.200 5.800-2.200z" fill="#fff"/>
+                <text class="t" x="49" y="25">AI Agent</text><text class="name" x="49" y="41">Pentest agent</text>
+                <circle class="st" cx="122" cy="14" r="4"/><path class="chk" d="M119.800 14l1.600 1.600 2.900-3.200" fill="none" stroke="#fff" stroke-width="1.300" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="n k-agent" id="n-strix" transform="translate(460 172)">
+                <rect class="box" width="136" height="58" rx="12"/>
+                <rect class="ico" x="11" y="14" width="30" height="30" rx="8"/><path d="M26 21l2 5.800 5.800 2.200-5.800 2.200-2 5.800-2-5.800-5.800-2.200 5.800-2.200z" fill="#fff"/>
+                <text class="t" x="49" y="25">AI Agent</text><text class="name" x="49" y="41">Exploit check</text>
+                <circle class="st" cx="122" cy="14" r="4"/><path class="chk" d="M119.800 14l1.600 1.600 2.900-3.200" fill="none" stroke="#fff" stroke-width="1.300" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="n k-agent" id="n-analysis" transform="translate(624 121)">
+                <rect class="box" width="136" height="58" rx="12"/>
+                <rect class="ico" x="11" y="14" width="30" height="30" rx="8"/><path d="M26 21.500l6 2.200v4.300c0 3.600-2.500 6.200-6 7.500-3.500-1.300-6-3.900-6-7.500v-4.300z" fill="none" stroke="#fff" stroke-width="1.700" stroke-linejoin="round"/>
+                <text class="t" x="49" y="25">Validation</text><text class="name" x="49" y="41">Vuln. Analysis</text>
+                <circle class="st" cx="122" cy="14" r="4"/><path class="chk" d="M119.800 14l1.600 1.600 2.900-3.200" fill="none" stroke="#fff" stroke-width="1.300" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="n k-act" id="n-report" transform="translate(788 70)">
+                <rect class="box" width="136" height="58" rx="12"/>
+                <rect class="ico" x="11" y="14" width="30" height="30" rx="8"/><path d="M21 22h10v14H21zM23.500 26h5M23.500 29h5M23.500 32h3" fill="none" stroke="#fff" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/>
+                <text class="t" x="49" y="25">AI Action</text><text class="name" x="49" y="41">Draft report</text>
+                <circle class="st" cx="122" cy="14" r="4"/><path class="chk" d="M119.800 14l1.600 1.600 2.900-3.200" fill="none" stroke="#fff" stroke-width="1.300" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="n k-act" id="n-notify" transform="translate(788 172)">
+                <rect class="box" width="136" height="58" rx="12"/>
+                <rect class="ico" x="11" y="14" width="30" height="30" rx="8"/><path d="M21 33h10l-1.300-2v-4a3.700 3.700 0 0 0-7.400 0v4zM24.700 35.500a1.400 1.400 0 0 0 2.600 0" fill="none" stroke="#fff" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/>
+                <text class="t" x="49" y="25">Action</text><text class="name" x="49" y="41">Notify team</text>
+                <circle class="st" cx="122" cy="14" r="4"/><path class="chk" d="M119.800 14l1.600 1.600 2.900-3.200" fill="none" stroke="#fff" stroke-width="1.300" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </div>
+          <aside class="sim-side" aria-hidden="true">
+            <div>
+              <div class="side-label">Execution</div>
+              <div class="progress-row">
+                <div class="ring"><svg viewBox="0 0 58 58"><circle class="track" cx="29" cy="29" r="24"/><circle class="bar" cx="29" cy="29" r="24"/></svg><b>0%</b></div>
+                <div><strong data-prog-title>Workflow in progress</strong><small data-prog-sub>Step 1 of 7 running</small></div>
+              </div>
+            </div>
+            <div>
+              <div class="side-label">Findings, live</div>
+              <div class="sev">
+                <div style="--c:var(--crit)"><span>Critical</span><b data-sev="c">0</b></div>
+                <div style="--c:var(--high)"><span>High</span><b data-sev="h">0</b></div>
+                <div style="--c:var(--med)"><span>Medium</span><b data-sev="m">0</b></div>
+                <div style="--c:var(--low)"><span>Low</span><b data-sev="l">0</b></div>
+              </div>
+            </div>
+            <div class="log-wrap">
+              <div class="side-label">Logs</div>
+              <div class="log"></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stack">
+    <p>Orchestrates the stack you already own</p>
+    <div class="marquee" aria-label="Supported tools and integrations">
+      <div class="marquee-track">
+        <span class="chip"><i style="--c:#f2811d"></i>Burp Suite</span><span class="chip"><i style="--c:#0ea5a4"></i>Nessus</span><span class="chip"><i style="--c:#0b0b14"></i>Nuclei</span><span class="chip"><i style="--c:#3b82f6"></i>Metasploit</span><span class="chip"><i style="--c:#2563eb"></i>OWASP ZAP</span><span class="chip"><i style="--c:#12a66a"></i>OpenVAS</span><span class="chip"><i style="--c:#7c3aed"></i>AI agents</span><span class="chip"><i style="--c:#e9b308"></i>Python scripts</span><span class="chip"><i style="--c:#5d6075"></i>Bash scripts</span><span class="chip"><i style="--c:#0ea5e9"></i>Docker tools</span><span class="chip"><i style="--c:#2563eb"></i>Jira</span><span class="chip"><i style="--c:#e5484d"></i>Slack</span><span class="chip"><i style="--c:#4f46e5"></i>Webhooks</span>
+        <span class="chip" aria-hidden="true"><i style="--c:#f2811d"></i>Burp Suite</span><span class="chip" aria-hidden="true"><i style="--c:#0ea5a4"></i>Nessus</span><span class="chip" aria-hidden="true"><i style="--c:#0b0b14"></i>Nuclei</span><span class="chip" aria-hidden="true"><i style="--c:#3b82f6"></i>Metasploit</span><span class="chip" aria-hidden="true"><i style="--c:#2563eb"></i>OWASP ZAP</span><span class="chip" aria-hidden="true"><i style="--c:#12a66a"></i>OpenVAS</span><span class="chip" aria-hidden="true"><i style="--c:#7c3aed"></i>AI agents</span><span class="chip" aria-hidden="true"><i style="--c:#e9b308"></i>Python scripts</span><span class="chip" aria-hidden="true"><i style="--c:#5d6075"></i>Bash scripts</span><span class="chip" aria-hidden="true"><i style="--c:#0ea5e9"></i>Docker tools</span><span class="chip" aria-hidden="true"><i style="--c:#2563eb"></i>Jira</span><span class="chip" aria-hidden="true"><i style="--c:#e5484d"></i>Slack</span><span class="chip" aria-hidden="true"><i style="--c:#4f46e5"></i>Webhooks</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE SHIFT -->
+<section class="section" id="shift">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow rv">The shift</span>
+      <h2 class="rv" style="--i:1">Analysts now run tools, scripts and AI agents together.</h2>
+      <p class="lead rv" style="--i:2">The work has moved from operating each tool to designing how they run. Most teams are still holding it together by hand.</p>
+    </div>
+    <div class="shift">
+      <article class="shift-card rv">
+        <span class="tag">Before</span>
+        <h3>The analyst operates every tool</h3>
+        <p>Runs each tool, waits, then carries its output to the next by hand.</p>
+        <div class="shift-viz">
+          <svg viewBox="0 0 480 170" aria-hidden="true">
+            <rect class="sv-box" x="190" y="1" width="100" height="32" rx="16"/><text class="sv-text" x="240" y="21" text-anchor="middle">Analyst</text>
+            <path class="sv-dash" d="M215 33L60 88M232 33L180 88M248 33L300 88M265 33L420 88"/>
+            <rect class="sv-box" x="10" y="90" width="100" height="40" rx="10"/><text class="sv-text" x="60" y="114" text-anchor="middle">Nessus</text>
+            <rect class="sv-box" x="130" y="90" width="100" height="40" rx="10"/><text class="sv-text" x="180" y="114" text-anchor="middle">Nuclei</text>
+            <rect class="sv-box" x="250" y="90" width="100" height="40" rx="10"/><text class="sv-text" x="300" y="114" text-anchor="middle">Burp Suite</text>
+            <rect class="sv-box" x="370" y="90" width="100" height="40" rx="10"/><text class="sv-text" x="420" y="114" text-anchor="middle">Report</text>
+            <path class="sv-dash" d="M110 110h20M230 110h20M350 110h20"/>
+            <text class="sv-sub" x="240" y="160" text-anchor="middle">Outputs carried by hand</text>
+          </svg>
+        </div>
+      </article>
+      <article class="shift-card now rv" style="--i:1">
+        <span class="tag accent">Now</span>
+        <h3>The analyst designs the workflow</h3>
+        <p>Chooses what runs in which order, hands steps to agents, and validates the results.</p>
+        <div class="shift-viz">
+          <svg viewBox="0 0 480 170" aria-hidden="true">
+            <rect class="sv-box" x="1" y="72" width="88" height="40" rx="20"/><text class="sv-text" x="45" y="96" text-anchor="middle">Analyst</text>
+            <path class="sv-line" d="M89 92h31"/>
+            <rect x="120" y="14" width="230" height="150" rx="16" fill="#f6f5ff" stroke="#cfcaff"/>
+            <text class="sv-sub" x="136" y="36" style="fill:#4f46e5">Workflow · orchestrated</text>
+            <rect class="sv-box" x="136" y="48" width="198" height="30" rx="8"/><text class="sv-text" x="150" y="67">Security tools</text>
+            <rect class="sv-box" x="136" y="86" width="198" height="30" rx="8"/><text class="sv-text" x="150" y="105">Custom scripts</text>
+            <rect class="sv-box" x="136" y="124" width="198" height="30" rx="8"/><text class="sv-text" x="150" y="143">AI agents</text>
+            <path class="sv-line" d="M350 92h30"/>
+            <rect x="380" y="64" width="99" height="56" rx="12" fill="#e6f7ef" stroke="#9bdcbc"/>
+            <text class="sv-text" x="429" y="88" text-anchor="middle" style="fill:#0d7a4f">Validated</text><text class="sv-text" x="429" y="104" text-anchor="middle" style="fill:#0d7a4f">results</text>
+          </svg>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="section soft" id="problem">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow rv">What it costs today</span>
+      <h2 class="rv" style="--i:1">Every analyst builds their own setup. The organization carries the risk.</h2>
+    </div>
+    <div class="grid-4">
+      <article class="card rv"><div class="icon"><svg><use href="#i-frag"/></svg></div><span class="k">Work in fragments</span><h3>Fragmented execution slows every test</h3><p>Analysts juggle terminals, run tools one by one and paste outputs into AI chats.</p></article>
+      <article class="card rv" style="--i:1"><div class="icon"><svg><use href="#i-wrench"/></svg></div><span class="k">Build it yourself</span><h3>Custom orchestration is costly to maintain</h3><p>Every analyst and target needs different wiring, adding ongoing engineering work.</p></article>
+      <article class="card rv" style="--i:2"><div class="icon"><svg><use href="#i-alert"/></svg></div><span class="k">Run it unsafely</span><h3>Sensitive data sits in unsafe places</h3><p>Agents and scripts run on laptops and shared servers, next to data and credentials.</p></article>
+      <article class="card rv" style="--i:3"><div class="icon"><svg><use href="#i-users"/></svg></div><span class="k">Can't scale it</span><h3>The best workflows stay with one person</h3><p>Seniors work far faster, but teams can't standardize the method or see progress.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section class="section" id="platform">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow rv">The platform</span>
+      <h2 class="rv" style="--i:1">One platform to build, run and scale security workflows, safely.</h2>
+      <p class="lead rv" style="--i:2">Manual testing, standalone tools, scripts, AI agents and full workflows share one workspace and one project context.</p>
+    </div>
+    <div class="tabs rv" data-tabs>
+      <div class="tab-list" role="tablist">
+        <button class="tab active" role="tab"><h3>Build workflows in clicks</h3><p>Drag tools, AI agents and scripts onto one canvas. Outputs pass from step to step on their own. Start runs by hand, on a schedule or by webhook.</p></button>
+        <button class="tab" role="tab"><h3>Run in isolation</h3><p>Every workflow runs in a dedicated, ephemeral sandbox on your own machine or an isolated cloud VM, so each project's data and credentials stay separate.</p></button>
+        <button class="tab" role="tab"><h3>Watch every run live</h3><p>Follow each run step by step with streaming logs. Findings appear by severity as they are found, and logs and artifacts stay with the run.</p></button>
+        <button class="tab" role="tab"><h3>One list of validated findings</h3><p>Findings from every tool and agent land in one place. AI marks what is confirmed and drafts the impact and fix, ready for your review.</p></button>
+        <button class="tab" role="tab"><h3>A marketplace for your arsenal</h3><p>Install CLI tools, GUI tools and third-party AI agents in one click, or plug in your own scripts and Docker tools without writing code.</p></button>
+        <button class="tab" role="tab"><h3>Share what works</h3><p>Publish proven workflows organization-wide. Private drafts stay apart from approved ones, and every analyst starts from the team's best work.</p></button>
+      </div>
+      <div class="tab-panels">
+        <figure class="shot active"><div class="shot-bar"><div class="dots"><i></i><i></i><i></i></div><span>Workflow builder</span></div><img src="assets/img/builder.webp" width="1296" height="934" alt="Radar 36 workflow builder with scanners, AI agents and actions connected on a canvas"></figure>
+        <figure class="shot"><div class="shot-bar"><div class="dots"><i></i><i></i><i></i></div><span>Execution environment</span></div><img src="assets/img/environment.webp" width="1294" height="758" loading="lazy" alt="Execution environment showing a local machine and isolated cloud VMs"></figure>
+        <figure class="shot"><div class="shot-bar"><div class="dots"><i></i><i></i><i></i></div><span>Workflow run</span></div><img src="assets/img/run.webp" width="1294" height="902" loading="lazy" alt="Live workflow run with step progress, streaming logs and a run summary"></figure>
+        <figure class="shot"><div class="shot-bar"><div class="dots"><i></i><i></i><i></i></div><span>Findings</span></div><img src="assets/img/findings.webp" width="1290" height="834" loading="lazy" alt="Consolidated findings list with AI validation and AI-generated details"></figure>
+        <figure class="shot"><div class="shot-bar"><div class="dots"><i></i><i></i><i></i></div><span>Marketplace</span></div><img src="assets/img/marketplace.webp" width="1294" height="938" loading="lazy" alt="Marketplace of security tools, AI agents and integrations"></figure>
+        <figure class="shot"><div class="shot-bar"><div class="dots"><i></i><i></i><i></i></div><span>Workflows</span></div><img src="assets/img/workflows.webp" width="1290" height="850" loading="lazy" alt="Workflow library with private, organization and community workflows"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section soft" id="how">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow rv">How it works</span>
+      <h2 class="rv" style="--i:1">From first scan to delivered report, in one flow.</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv" style="--i:0"><h3>Bring</h3><p>Pick tools and agents from the marketplace, or add your own scripts and Docker tools.</p></div>
+      <div class="step rv" style="--i:1"><h3>Build</h3><p>Chain them on a canvas, or run any single tool on its own when that's all you need.</p></div>
+      <div class="step rv" style="--i:2"><h3>Run</h3><p>Execute in an ephemeral sandbox, locally or on an isolated cloud VM.</p></div>
+      <div class="step rv" style="--i:3"><h3>Validate</h3><p>AI flags confirmed and likely-valid findings. Your analysts make the call.</p></div>
+      <div class="step rv" style="--i:4"><h3>Deliver</h3><p>Add reviewed findings to the report and send results to Jira, Slack or email.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section class="section" id="outcomes">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow rv">Business value</span>
+      <h2 class="rv" style="--i:1">Faster testing. Higher quality outcomes.</h2>
+      <p class="lead rv" style="--i:2">Radar 36 removes the hand-offs between tools, so expert time goes to the work that needs judgment.</p>
+    </div>
+    <div class="stats">
+      <div class="stat rv"><b><span data-count="1">1</span> click</b><span>to install a tool or agent from the marketplace</span></div>
+      <div class="stat rv" style="--i:1"><b><span data-count="0">0</span> code</b><span>to plug in your own scripts and Docker tools</span></div>
+      <div class="stat rv" style="--i:2"><b><span data-count="1">1</span> list</b><span>of findings across every tool, script and agent</span></div>
+      <div class="stat rv" style="--i:3"><b>Every run</b><span>recorded with its logs, artifacts and who started it</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCES -->
+<section class="section soft" id="who">
+  <div class="container">
+    <div class="head center">
+      <span class="eyebrow rv">Who it's for</span>
+      <h2 class="rv" style="--i:1">Built for the teams that do the testing.</h2>
+    </div>
+    <div class="grid-2">
+      <a class="aud rv" href="security-firms.html" style="--glow:rgba(124,58,237,.28)">
+        <span class="tag accent">Pentest and VAPT firms</span>
+        <h3>Deliver more engagements with the same team.</h3>
+        <p>Give analysts back the hours spent on setup, copy-paste and rewriting findings.</p>
+        <ul>
+          <li class="check">Every client in its own sandbox</li>
+          <li class="check">Your best method, run by everyone</li>
+          <li class="check">Reports that stop being the bottleneck</li>
+        </ul>
+        <span class="link-arrow">Radar 36 for security firms <svg><use href="#arrow"/></svg></span>
+      </a>
+      <a class="aud rv" href="enterprise.html" style="--i:1;--glow:rgba(14,165,164,.26)">
+        <span class="tag ok">In-house security teams</span>
+        <h3>Test as fast as your engineers ship.</h3>
+        <p>Move from point-in-time projects to a testing program that runs on your cadence.</p>
+        <ul>
+          <li class="check">AI agents on your terms, in your environment</li>
+          <li class="check">One standard across every team</li>
+          <li class="check">Audit evidence as a by-product</li>
+        </ul>
+        <span class="link-arrow">Radar 36 for enterprises <svg><use href="#arrow"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="section" id="capabilities">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow rv">Why Radar 36</span>
+      <h2 class="rv" style="--i:1">One workspace for every way analysts test.</h2>
+    </div>
+    <div class="cap rv">
+      <div class="cap-row"><div>Capability</div><div>Radar 36</div></div>
+      <div class="cap-row"><div>Run any tool, script or agent standalone</div><div><span class="cap-val">One click</span></div></div>
+      <div class="cap-row"><div>Add your own tool without code</div><div><span class="cap-val">Included</span></div></div>
+      <div class="cap-row"><div>GUI tools for manual testing</div><div><span class="cap-val">Ready in one click</span></div></div>
+      <div class="cap-row"><div>AI agents in workflows</div><div><span class="cap-val">Third-party agents supported</span></div></div>
+      <div class="cap-row"><div>Marketplace</div><div><span class="cap-val">CLI tools, GUI tools and agents</span></div></div>
+      <div class="cap-row"><div>One project context for AI</div><div><span class="cap-val">Across tool, script and agent runs</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPLOYMENT -->
+<section class="section dark" id="deployment">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow rv">Deployment and control</span>
+      <h2 class="rv" style="--i:1">Self-hosted. Isolated by design.</h2>
+      <p class="lead rv" style="--i:2">Security testing touches your most sensitive systems. Radar 36 runs in your environment and keeps every project apart.</p>
+    </div>
+    <div class="grid-4">
+      <article class="card rv"><div class="icon"><svg><use href="#i-server"/></svg></div><h3>Your environment</h3><p>Self-hosted, on your own machines or on isolated cloud VMs.</p></article>
+      <article class="card rv" style="--i:1"><div class="icon"><svg><use href="#i-box"/></svg></div><h3>Ephemeral sandboxes</h3><p>Each workflow runs in a dedicated sandbox that is discarded afterwards.</p></article>
+      <article class="card rv" style="--i:2"><div class="icon"><svg><use href="#i-lock"/></svg></div><h3>Separation per project</h3><p>One project's data and credentials never mix with another's.</p></article>
+      <article class="card rv" style="--i:3"><div class="icon"><svg><use href="#i-log"/></svg></div><h3>A record of every run</h3><p>Who started it, where it ran and what it found, with logs and artifacts.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta dark">
+  <canvas data-radar data-dark aria-hidden="true"></canvas>
+  <div class="container">
+    <span class="eyebrow rv">Next step</span>
+    <h2 class="rv" style="--i:1">Pick one project. We'll show you the difference.</h2>
+    <p class="lead rv" style="--i:2">A 30-minute walkthrough with the people building the product, mapped to the tools and workflows your team uses today.</p>
+    <div class="hero-actions rv" style="--i:3">
+      <a class="btn btn-light" href="https://cal.id/saurabhsingh/product-walkthrough" target="_blank" rel="noopener">Book a demo <svg><use href="#arrow"/></svg></a>
+      <a class="btn btn-outline-light" href="mailto:info@radar36.com">info@radar36.com</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="" width="30" height="30">Radar 36</a>
+        <p>The security orchestration platform. Run, validate and deliver security tests at scale.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#platform">Platform</a></li>
+          <li><a href="index.html#how">How it works</a></li>
+          <li><a href="index.html#deployment">Deployment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="security-firms.html">For security firms</a></li>
+          <li><a href="enterprise.html">For enterprises</a></li>
+          <li><a href="https://cal.id/saurabhsingh/product-walkthrough" target="_blank" rel="noopener">Book a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li>Radar 36 Inc. (Delaware C Corp)</li>
+          <li>8 The Green, Ste. R, Dover, DE 19901, USA</li>
+          <li><a href="mailto:info@radar36.com">info@radar36.com</a></li>
+          <li><a href="tel:+13023063064">+1 (302) 306-3064</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Radar 36 Inc. All rights reserved.</span>
+      <span><a href="terms.html">Terms &amp; Conditions</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/waitlist.js" defer></script>
+</body>
+</html>
